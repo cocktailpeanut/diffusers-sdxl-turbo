@@ -1,0 +1,19 @@
+{
+  "run": [{
+    "method": "shell.run",
+    "params": {
+      "venv": "venv",
+      "message": [
+        "{{pip.install.torch}}",
+        "{{gpu === 'nvidia' ? 'pip install xformers --index-url https://download.pytorch.org/whl/cu118' : ''}}",
+        "pip install -r requirements.txt"
+      ]
+    }
+  }, {
+    "method": "input",
+    "params": { "title": "Install Success", "description": "Go back to the dashboard and launch the app!" }
+  }, {
+    "method": "browser.open",
+    "params": { "uri": "/?selected=Diffusers SDXL Turbo" }
+  }]
+}
