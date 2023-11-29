@@ -6,12 +6,7 @@
       "params": {
         "venv": "venv",
         "message": "python app.py",
-        "on": [
-          {
-            "event": "/https?:\/\/[0-9.:]+/",
-            "done": true
-          }
-        ]
+        "on": [ { "event": "/https?:\/\/[0-9.:]+/", "done": true } ]
       }
     },
     {
