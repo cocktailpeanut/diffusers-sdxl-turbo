@@ -15,12 +15,12 @@ module.exports = {
           return [
             { icon: "fa-solid fa-spin fa-circle-notch", text: "Running" },
             { icon: "fa-solid fa-rocket", text: "Open Web UI", href: session.url, target: "_blank" },
-            { icon: "fa-solid fa-terminal", text: "Terminal", href: "start.json" }
+            { icon: "fa-solid fa-terminal", text: "Terminal", href: "start.json", params: { fullscreen: true } }
           ]
         } else {
           return [
             { icon: "fa-solid fa-spin fa-circle-notch", text: "Running" },
-            { icon: "fa-solid fa-terminal", text: "Terminal", href: "start.json" }
+            { icon: "fa-solid fa-terminal", text: "Terminal", href: "start.json", params: { fullscreen: true } }
           ]
         }
       } else {
